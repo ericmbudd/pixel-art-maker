@@ -7,10 +7,6 @@ html, body {
   background-color: #e6f90b;
 }
 
-.off {
-  background-color: white;
-}
-
 #grid {}
 
 #palette {}
@@ -55,26 +51,46 @@ html, body {
   display: flex;
 }
 
-.colors {
-  height: 2em;
-  width: 2em;
-  margin: .5em;
-}
-
 .color-red {
   background-color: red;
+}
+
+.color-orange {
+  background-color: orange;
+}
+
+.color-yellow {
+  background-color: yellow;
+}
+
+.color-green {
+  background-color: green;
 }
 
 .color-blue {
   background-color: blue;
 }
 
+.color-indigo {
+  background-color: indigo;
+}
+
+.color-violet {
+  background-color: violet;
+}
+
 .color-white {
   background-color: white;
 }
 
-.currentColor {
-  height: 2em;
+.colors {
+  height: 3em;
   width: 4em;
+  margin: .5em;
+}
+
+.currentColor {
+  height: 3em;
+  width: 6em;
   margin: .5em;
 }
