@@ -1,5 +1,5 @@
 html, body {
-  height: 97%;
+  height: 94%;
   background-color: gray;
 }
 
@@ -84,13 +84,20 @@ html, body {
 }
 
 .colors {
+  border-radius: 50px;
   height: 3em;
-  width: 4em;
+  width: 3em;
+  min-height: 3em;
+  min-width: 3em;
   margin: .5em;
+  box-shadow: 1px 1px 4px;
 }
 
 .currentColor {
+  border-radius: 0px;
   height: 3em;
   width: 6em;
+  min-width: 6em;
   margin: .5em;
+  box-shadow: 1px 1px 4px;
 }
