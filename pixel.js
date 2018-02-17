@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("toggle class coming soon", event.target)
 
     console.log("pixel" + " " + currentColor.classList[1]);
-    event.target.setAttribute("class", "pixel" + " " + currentColor.classList[1])
+    if (event.target != this)
+      event.target.setAttribute("class", "pixel" + " " + currentColor.classList[1])
     console.log("new pixel classes " + event.target.ClassName);
     console.log(document.querySelectorAll('.pixel')[0]);
     // if (event.target.classList.contains('off')) {
@@ -35,7 +36,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     console.log("palette" + event.target.className);
-    currentColor.className = (event.target.className + " " + "currentColor")
+    if (event.target != this)
+      currentColor.className = (event.target.className + " " + "currentColor")
 
     console.log(currentColor)
   }
