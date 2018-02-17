@@ -101,3 +101,8 @@ html, body {
   margin: .5em;
   box-shadow: 1px 1px 4px;
 }
+
+h2 {
+  color: gray;
+  text-shadow: 1px 1px .5px;
+}
