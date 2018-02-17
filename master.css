@@ -1,0 +1,10 @@
+html, body {
+  height: 97%;
+}
+
+.container {
+  border-radius: 25px;
+  background-color: #c6c5c5;
+  height: 100%;
+  margin: 1em;
+}
