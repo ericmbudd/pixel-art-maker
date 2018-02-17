@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   let pixelColor = document.querySelectorAll('.pixel')
   let grid = document.getElementById('grid')
+  let palette = document.getElementById('palette')
 
 
   function togglePixel(event) {
@@ -22,6 +23,26 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  grid.addEventListener("click", togglePixel)
+  function selectColor(event) {
+    //console.log(grid)
+    console.log(event);
+    console.log("selectColor event" + event.target.style.backgroundColor)
 
+    let currentColor = document.getElementById('currentColor')
+
+    currentColor.setAttribute("style", "background-color:" + event.target.style.backgroundColor)
+
+    console.log(currentColor)
+  }
+  // if (event.target.classList.contains('off')) {
+  //   event.target.classList.replace('off', 'lightup')
+  //   console.log('turning on')
+  // } else {
+  //   event.target.classList.replace('lightup', 'off')
+  //   console.log('turning off')
+  // }
+
+
+  grid.addEventListener("click", togglePixel)
+  palette.addEventListener("click", selectColor)
 });

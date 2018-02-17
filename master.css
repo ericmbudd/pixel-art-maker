@@ -13,6 +13,10 @@ html, body {
 
 #grid {}
 
+#palette {}
+
+#currentColor {}
+
 .container {
   border-radius: 25px;
   background-color: #e8e8e8;
@@ -54,5 +58,23 @@ html, body {
 .colors {
   height: 2em;
   width: 2em;
+  margin: .5em;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-white {
+  background-color: white;
+}
+
+.currentColor {
+  height: 2em;
+  width: 4em;
   margin: .5em;
 }
