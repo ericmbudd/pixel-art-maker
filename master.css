@@ -3,19 +3,31 @@ html, body {
   background-color: gray;
 }
 
+.lightup {
+  background-color: #e6f90b;
+}
+
+.off {
+  background-color: white;
+}
+
+#grid {}
+
 .container {
   border-radius: 25px;
   background-color: #e8e8e8;
   height: 100%;
   margin: 1em;
+  padding: 1em;
   align-items: center;
-  display: flex;
+  /* display: flex; */
+  /* padding-bottom: 200px; */
 }
 
 .inner-container {
   background-color: black;
   height: 90%;
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: inline-grid;
   grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
@@ -29,7 +41,7 @@ html, body {
 
 .pixel {
   /* border-radius: 25px; */
-  background-color: white;
+  /* background-color: white; */
   margin: 1px;
   /* width: 100%; */
   /* height: 50%; */
